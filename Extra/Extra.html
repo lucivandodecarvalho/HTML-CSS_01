@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios</title>
+    <link rel="stylesheet" href="teste.css">
+    <link rel="shortcut icon" href="../EX004 favicon/imagem/Mayosoft-Azullustre-2-Paleta.ico" type="image/x-icon">
+</head>
+<body>
+<h1>Paragrafos e quebra de linha</h1>
+<p> 
+</p>voce pode escrever um paragrafo de qualquer jeito basta colocar tudo no meio do par de tags: &lt;p&gt; e &lt;/p&gt;
+<p>Se precisar quebrar o texto em algum lugar especifico <br> como esse, você pode usar a tag: &lt;br&gt;.
+<hr>
+</p>vamos adicionar alguns simbolos especiais:
+&reg;
+&copy;
+&trade;
+&euro;
+&pound;
+&yen;
+&cent;
+&Delta;
+&delta;
+&uparrow;
+&uarr;
+&downarrow;
+
+<p>
+    vamos adicionar alguns
+    &#x1F970;
+    &#x1F970;
+    &#x1F497;
+    &#x1F970;
+</p>
+<h1 style="font-size: 400%; color: red; border-color: black;">Teste com imagens</h1>
+<picture style="width:max-content 700px">
+    <img src="../EX003 teste com imagens/imagens/IMG_20200317_173131.png" alt="">
+</picture>
+<hr>
+<h1>Principais formatações</h1>
+<h2>Negrito/Destaque</h2>
+<p>Nessa frase temos um <b>termo em negrido usando a tag b</b><p/p>
+<p>nesta frase temos um termo em <strong>destaque usando a tag strong</strong></p>
+<h2>Italico ou enfase</h2>
+<p>Nessa frase temos um termo <i>em italco usando a tag</i> <b>&lt;i&gt</b></p>
+<p>nesta frase temso um termo <em>em destaque usando a tag</em> <b>&lt;em&gt;</b></p>
+<h2>texto marcado</h2>
+<p>podemos criar tbem <mark>um texto marcado</mark> usando a tag &lt;mark&gt</p>
+<p>E no outro parágrafo, temos <mark> outro texto marcado.</mark>
+</p>
+<p>estamos criando um texto <STRONG><BIG>grande</BIG></STRONG> e um <STRONG><small>pequeno</small></STRONG> nesse paragrafo</p>
+<hr>
+<H2>Texto deletado</H2>
+<p>Podemos marcar <del>um texto como excluído</del> para indicar que ele deve ser lido, mas não considerado.</p>
+<h2>Texto inserido</h2>
+<p>Podemos marcar <ins>um texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois.</p>
+<h2>Texto sobrescrito</h2>
+<p>Para inserir coisas do tipo: X=X<sup>20</sup>+3</p>
+<h2>Texto subescrito</h2>
+<p>Para inserir coisas do tipo: H<sub>2</sub>O</p>
+<hr>
+<h1>Outras formatações</h1>
+<h2>Código Fonte</h2>
+<p>O comando <code>document.getElementById('text')</code> é escrito em linguagem javaScript0</p>
+<pre>
+    <code>
+        num = int(imput('Digite um número'))
+        if num % 2 == 0:
+             print(f'O número {num} é PAR')
+        else:
+             print(f'O número é IMPAR')
+        print('fim do programa')
+    </code>
+</pre>
+<hr>
+<h2>Citações simples</h2>
+<p>Como diria o pai de um amigo meu: <q>O computador é um burro muito rápido</q></p>
+<h2>Citações completas</h2>
+<p>Segundo jeff noble, no seu livro HTML para leigos:</p>
+<blockquote cite="https://www.google.com.br/books/edition/HTML_XHTML_e_CSS_Para_Leigos/E8ZtDwAAQBAJ?hl=pt-BR&gbpv=1&dq=html+e+css&printsec=frontcover">a diferença entre elementos inline e um bloco de texto é importante.
+</blockquote>
+<hr>
+<h2>Abrevaiçoes</h2>
+<p>estou estudadno <abbr title="hiperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando</p>
+<hr>
+<h1>Trabalhando com listas</h1>
+<h2>listas ordenadas</h2>
+<p>para utilizar esse estilo, utilizamos a tag &lt;ol type="I"&gt;<br>que escreve a lista em algarismos romanos.</p>
+<ol type="I">
+    <li>acordar</li>
+    <li>ligar para joao</li>
+    <li>tomar café</li>
+    <li>escovar os dentes</li>
+    <li>ir para a faculdade</li>
+    <li>Almoçar</li>
+    <li>ir para o trabalho</li>
+    <li>voltar para casa</li>
+    <li>Jantar</li>
+    <li>dormir</li>
+</ol>
+<p>E para utilizar esse estilo, utilizamos a tag &lt;ol type="1"&gt;<br>que escreve a lista em ordem numérica.</p>
+
+<ol type="1">
+    <li>acordar</li>
+    <li>ligar para joao</li>
+    <li>tomar café</li>
+    <li>escovar os dentes</li>
+    <li>ir para a faculdade</li>
+    <li>Almoçar</li>
+    <li>ir para o trabalho</li>
+    <li>voltar para casa</li>
+    <li>Jantar</li>
+    <li>dormir</li>
+</ol>
+<h2>Lista não ordenada</h2>
+<h3>
+    <ul type="disc">
+    <li>DISC
+</h3>
+<p>para utilizar esse estilo, utilizamos a tag &lt;ul type="disc"&gt;<br>que escreve a lista em simbolos de disco.</p>
+
+<ul type="disc">
+    <li>acordar</li>
+    <li>ligar para joao</li>
+    <li>tomar café</li>
+    <li>escovar os dentes</li>
+    <li>ir para a faculdade</li>
+    <li>Almoçar</li>
+    <li>ir para o trabalho</li>
+    <li>voltar para casa</li>
+    <li>Jantar</li>
+    <li>dormir</li>
+</ul>
+<h3>
+    <ul type="circle">
+    <li>CIRCLE
+</h3>
+<p>E para utilizar esse estilo, utilizamos a tag &lt;ul type="circle"&gt;<br>que escreve a lista em simbolos de circulo.</p>
+<ul type="circle">
+    <li>acordar</li>
+    <li>ligar para joao</li>
+    <li>tomar café</li>
+    <li>escovar os dentes</li>
+    <li>ir para a faculdade</li>
+    <li>Almoçar</li>
+    <li>ir para o trabalho</li>
+    <li>voltar para casa</li>
+    <li>Jantar</li>
+    <li>dormir</li>
+</ul>
+<h3>
+    <ul type="square">
+    <li>SQUARE
+</h3>
+<p>E para utilizar esse estilo, utilizamos a tag &lt;ul type="square"&gt;<br>que escreve a lista em simbolos quadrados.</p>
+<ul type="square">
+    <li>acordar</li>
+    <li>ligar para joao</li>
+    <li>tomar café</li>
+    <li>escovar os dentes</li>
+    <li>ir para a faculdade</li>
+    <li>Almoçar</li>
+    <li>ir para o trabalho</li>
+    <li>voltar para casa</li>
+    <li>Jantar</li>
+    <li>dormir</li>
+</ul>
+<h2>Aninhamento de listas</h2>
+<h3>Colocando uma &lt;ol&gt; dentro da outra</h3>
+<p>Ex:</p>
+<h4>Minhas linguagens favoritas</h4>
+<ol type="1">
+    <li>Antigas</li>
+     <ol type="A">
+        <li>clipper</li>
+        <li>Visual Basic</li>
+        <li>fortran</li>
+        <li>Delphi</li>
+     </ol>
+    <li>Novas</li>
+     <ol type="A" start="5">
+        <li>PHP</li>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>Kotlin</li>
+     </ol>
+</ol>
+<h2>Meus jogos favoritos</h2>
+<ol>
+    <li>NES</li>
+    <ul type="Circle">
+        <li>megaman</li>
+        <li>mario bros</li>
+        <li>dinos mania</li>
+    </ul>
+    <li>SNES</li>
+    <ul type="disc">
+        <li>Mario 2.0</li>
+        <li>megaman 2.0</li>
+        <li>Dinos mania 2.0</li>
+    </ul>
+    <li>PlayStation</li>
+    <ul type="square">
+        <li>Crash bandicoot</li>
+        <li>Syphon filter</li>
+        <li>quake ii</li>
+    </ul>
+</ol>
+<h2 frameborder="10">Lista de Definições</h2>
+<dl>
+    <dt>HTML5</dt>
+    <dd>Linguagem de marcação para a criação do conteúo de um site </dd>
+    <dt>CSS</dt>
+    <dd>Linguagem de marcaçaõ para a criação do design de um site</dd>
+    <dt>JavaScript</dt>
+    <dd>Linguagem de programação para a criação de interatividade de um site</dd>
+</dl>
+<h1>Usando links externos</h1>
+<p>você pode acessar a minha playlist usando os links a seguir:</p>
+<h1>GLORIA GROOVE</h1>
+<iframe width="450" height="300" src="https://www.youtube.com/embed/p4aPlYN6x1Q" title="YouTube video player" frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>Vermelho</iframe>
+<iframe width="450" height="300" src="https://www.youtube.com/embed/BpxrvcYDnf4" title="YouTube video player" frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>A queda</iframe>
+<iframe width="450" height="300" src="https://www.youtube.com/embed/X7cz9v6mHzg" title="Leilão" frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h1>Links para download</h1>
+<a title="Dragon Ball" frameborder="10" href="../EX010/MIDIA/Dragon Ball 001 - 1280x960.mkv">Dragon Ball</a>
+</body>
+</html>
