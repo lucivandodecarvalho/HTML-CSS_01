@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+</head>
+<body>
+    <form action="/pagina-processa-dados-do-form" method="post">
+
+        <fieldset>
+            <legend>Dados Gerais</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" minlength="3" id="nome">
+
+            <label for="data_nasc">Data de Nascimento</label>
+            <input type="date" id="data_nasc" >
+
+            <label for="cpf">CPF</label>
+            <input type="number" minlength="11" id="cpf">
+
+        </fieldset>
+        <fieldset>
+            <legend>Defina uma senha</legend>
+
+            <label for="senha">Senha</label>
+            <input type="password" minlength="8" id="senha">
+            <label for="dig_senha">Redigite</label>
+            <input type="password" minlength="8" id="dig_senha">
+        </fieldset>
+
+        <fieldset>
+            <legend>Endereço</legend>
+            <label for="tipo_endereco">Tipo:</label>
+            <select id="tipo_endereco">
+                <option value="">Selecione</option>
+                <option value="rua">Rua</option>
+                <option value="estrada">Estrada</option>
+                <option value="rodovia">Rodovia</option>
+                <option value="outro">Outro</option>
+        </select>
+            <label for="logradouro_endereco">Logradouro</label>
+            <input type="text" id="logradouro_endereco"></select>
+
+            <label for="numero_endereco">Nº</label>
+            <input type="text" id="numero_endereco"></select>
+
+            <label for="compremento_endereco">Complemento</label>
+            <input type="text" id="compremento_endereco"></select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Fale Conosco</legend>
+            <label for="msg">Mensagem</label>
+            <textarea id="msg" cols="200" rows="20"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </fieldset>
+    </form>
+</body>
+</html>
